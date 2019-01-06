@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CS - ML1  - Sentiment Analysis</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/styles.css" rel="stylesheet">
+
+  <!-- Include JQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Include custom JavaScript -->
+  <script src="static/js/app.js"></script>
+</head>
+
+<body>
+  <div class="container center">
+    
+    <img src="static/img/logo-coderschool.png" alt="" class="logo-cs">
+    <h1>Welcome to CoderSchool! </h1>
+    <br>
+    <h3>How are you today?</h3>
+    <form class="form-inline" id="tweet_form" onsubmit="return false">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="tweetText" placeholder="Your answer...">
+      <button type="submit" class="btn btn-primary" onclick="classify()">Submit</button>
+    </form>
+    <br><br>
+    <img src="static/img/neutral.svg" id="sentimentImg" alt="Tweet sentiment" class="sentiment-img">
+    <br><br>
+    <p id='probText'></p>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Sentiment Analysis with Logistic Regression</span>
+    </div>
+  </footer>
+</body>
+</html>
